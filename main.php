@@ -11,9 +11,9 @@ require_once('Salary.php');
 require_once('Calculate.php');
 
 $team = new Team();
-$team->addWorker(new Designer('Rabotyaga1','familiaRabotyaga1','OtchestvoRabotyaga1', 3000, 0));
-$team->addWorker(new SeniorDeveloper('Rabotyaga2','familiaRabotyaga2','OtchestvoRabotyaga2', 10, 60));
-$team->addWorker(new MiddleDeveloper('Rabotyaga3','familiaRabotyaga3','OtchestvoRabotyaga3', 1000, 0));
-$team->addWorker(new MiddleDeveloper('Rabotyaga4','familiaRabotyaga4','OtchestvoRabotyaga4', 1000, 0));
-$team->addWorker(new Verstalchik('Rabotyaga5','familiaRabotyaga5','OtchestvoRabotyaga5', 5, 120));
+$team->addWorker(new Designer('Rabotyaga1','familiaRabotyaga1','OtchestvoRabotyaga1', 3000, 0 , 1));
+$team->addWorker(new SeniorDeveloper('Rabotyaga2','familiaRabotyaga2','OtchestvoRabotyaga2', 10, 60, 1));
+$team->addWorker(new MiddleDeveloper('Rabotyaga3','familiaRabotyaga3','OtchestvoRabotyaga3', 1000,0, 3 ));
+$team->addWorker(new MiddleDeveloper('Rabotyaga4','familiaRabotyaga4','OtchestvoRabotyaga4', 1000, 0, 3));
+$team->addWorker(new Verstalchik('Rabotyaga5','familiaRabotyaga5','OtchestvoRabotyaga5', 5, 120, 1));
 echo Calculate::calc($team->getTeam());
